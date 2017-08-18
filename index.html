@@ -9,7 +9,7 @@
     $( document ).ready(function() {
       $(window).resize(function(){
         $("p").html($(window).width()+" x "+$(window).height())
-           if ($(window).width() >= 0 && $(window).width() <= 287) {$("h1").html("Small smartphone")}
+           if ($(window).width() >= 0 && $(window).width() <= 287) {$("h1").html("Small smartphone"); $("body").css(background-color: #7009cd);}
            else if ($(window).width() >= 288 && $(window).width() <= 479) {$('h1').html("Normal smartphone")}
            else if ($(window).width() >= 480 && $(window).width() <= 623) {$('h1').html("Phablet or Small tablet")}
            else if ($(window).width() >= 624 && $(window).width() <= 1151) {$('h1').html("Tablet or a Big phablet")}
@@ -32,7 +32,6 @@
   h1, p {font-family: calibri, arial, sans-serif}
   h1 {font-size: 30px}
     /*small phone*/
-    @media screen and (min-width:0in) {body {background-color: #7009cd}}
     /*normal phone*/
     @media screen and (min-width:3in) {body {background-color: #b92544}}
     /*phablet or small tablet*/
