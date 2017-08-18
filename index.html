@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      $(window).resize(function(){
+        $("p").html($(window).width()+" x "+$(window).height())
+           if ($(window).width() >= 0 && $(window).width() <= 287) {$("h1").html("Small smartphone")}
+           else if ($(window).width() >= 288 && $(window).width() <= 479) {$('h1').html("Normal smartphone")}
+           else if ($(window).width() >= 480 && $(window).width() <= 623) {$('h1').html("Phablet or Small tablet")}
+           else if ($(window).width() >= 624 && $(window).width() <= 1151) {$('h1').html("Tablet or a Big phablet")}
+           else if ($(window).width() >= 1152 && $(window).width() <= 1439) {$('h1').html("Small computer")}
+           else if ($(window).width() >= 1440 && $(window).width() <= 2495) {$('h1').html("Normal computer")}
+           else {$('h1').html("Big computer")}
+          });
+        });
+    </script>
+  <title>Device data</title>
+  <style type="text/CSS">
+  html, body {height: 100%}
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  h1, p {font-family: calibri, arial, sans-serif}
+  h1 {font-size: 30px}
+    /*small phone*/
+    @media screen and (min-width:0in) {body {background-color: #7009cd}}
+    /*normal phone*/
+    @media screen and (min-width:3in) {body {background-color: #b92544}}
+    /*phablet or small tablet*/
+    @media screen and (min-width:5in) {body {background-color: #4353cd}}
+    /*tablet or a big phablet*/
+    @media screen and (min-width:6.5in) {body {background-color: #e89342}}
+    /*small pc*/
+    @media screen and (min-width:12in) {body {background-color: #67e86e}}
+    /*normal pc*/
+    @media screen and (min-width:15in) {body {background-color: #51d6d3}}
+    /*big pc*/
+    @media screen and (min-width:26in) {body {background-color: #3179ed}}
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <p></p>
+</body>
+</html>
