@@ -14,6 +14,7 @@
            else if ($(window).width() >= 1152 && $(window).width() <= 1439) {$('h1').html("Small computer"); $("body").css("color" , "#282828").css("background-color" , "#67e86e");}
            else if ($(window).width() >= 1440 && $(window).width() <= 2495) {$('h1').html("Normal computer"); $("body").css("color" , "#282828").css("background-color" , "#51d6d3");}
            else {$('h1').html("Big computer"); $("body").css("color" , "#282828").css("background-color" , "#3179ed");}
+      $("p").html($(window).width()+" x "+$(window).height())
       $(window).resize(function(){
         $("p").html($(window).width()+" x "+$(window).height())
       });
