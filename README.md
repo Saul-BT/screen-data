@@ -1,5 +1,6 @@
 # screen-data
 Displays information about the device and screen
+
 |Width|Value|
 |-----|-----|
 |  <287   |  Small Smartphone   |
